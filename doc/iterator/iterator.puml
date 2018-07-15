@@ -23,15 +23,22 @@ interface Aggregate {
     iterator()
 }
 
+note top
+    AgregateクラスとIteratorクラスを
+    分けることにより複数のIteratorが
+    扱えるようになる
+end note
+
+
 interface Iterator {
     hasNext()
     next()
 }
 
-Aggregate -ri-> Iterator
+Aggregate -ri-> Iterator : Creates
 Iterator <|.. BookShelfIterator
 BookShelfIterator o-le-> BookShelf
 BookShelf o--> Book
-Aggregate <|-do- BookShelf
+Aggregate <|.do. BookShelf
 
 @enduml
