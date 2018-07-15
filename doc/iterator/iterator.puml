@@ -18,15 +18,20 @@ class BookShelfIterator {
     hasNext()
     next()
 }
+note bottom
+    <size:10>BookShelfIteratorがBookShelf型の
+    <size:10>オブジェクトを持っているという集約関係
+end note
+
 
 interface Aggregate {
     iterator()
 }
 
 note top
-    AgregateクラスとIteratorクラスを
-    分けることにより複数のIteratorが
-    扱えるようになる
+    <size:10>AgregateクラスとIteratorクラスを
+    <size:10>分けることにより複数のIteratorが
+    <size:10>扱えるようになる
 end note
 
 
