@@ -1,0 +1,29 @@
+@startuml
+
+class Main {
+}
+
+interface Print {
+    printWeek()
+    printStrong()
+}
+
+class PrintBanner {
+    printWeek()
+    printStrong()
+}
+note bottom
+    <size:10>Bannerクラスを継承し、Printインタフェースを
+    <size:10>実装して、アダプターの役割を実現する
+end note
+
+class Banner {
+    showWithParen()
+    showWithAster()
+}
+
+Main -do-> Print:Users
+Print <|.ri. PrintBanner:implements
+PrintBanner -ri-|> Banner:extends
+
+@enduml

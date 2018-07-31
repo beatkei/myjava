@@ -1,0 +1,30 @@
+@startuml
+
+class Main {
+}
+
+class Print {
+    printWeek()
+    printStrong()
+}
+
+class PrintBanner {
+    banner
+    printWeek()
+    printStrong()
+}
+note bottom
+    <size:10>抽象クラスであるPrintを継承し、bannerインスタンスに
+    <size:10>処理を委譲することにより、アダプターの役割を実現する
+end note
+
+class Banner {
+    showWithParen()
+    showWithAster()
+}
+
+Main -do-> Print:Users
+Print <|-ri- PrintBanner:extends
+PrintBanner o-ri-> Banner:has
+
+@enduml
