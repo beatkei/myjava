@@ -1,4 +1,4 @@
-package adapter;
+package adapter.extend;
 
 public class PrintBanner extends Banner implements Print {
     public PrintBanner(String string) {

@@ -1,7 +1,7 @@
-package adapter2;
+package adapter.transfer;
 
-import adapter.Print;
-import adapter.PrintBanner;
+import adapter.extend.Print;
+import adapter.extend.PrintBanner;
 
 public class Main {
     public static void main(String[] args) {

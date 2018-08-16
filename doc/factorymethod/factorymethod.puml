@@ -7,12 +7,6 @@ package framwork {
         #registerProduct()
     }
 
-    note right
-        <size:10>createメソッドでprotectedな
-        <size:10>メソッドを利用してテンプレート処理
-        <size:10>（インスタンス作成）を実施
-    end note
-
     class Product {
         use()
     }
@@ -38,5 +32,11 @@ Factory <|-do- IDCardFactory
 Product <|-do- IDCard
 Factory -ri-> Product : Creates
 IDCardFactory -ri-> IDCard : Creates
+
+note top of Factory
+    <size:10>createメソッドでprotectedな
+    <size:10>メソッドを利用してテンプレート処理
+    <size:10>（インスタンス作成）を実施
+end note
 
 @enduml

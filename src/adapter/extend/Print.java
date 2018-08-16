@@ -1,4 +1,4 @@
-package adapter;
+package adapter.extend;
 
 public interface Print {
     // interface的にはabstractは書かなくていい（省略しても暗黙的に補完される）

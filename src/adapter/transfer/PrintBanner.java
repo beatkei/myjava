@@ -1,9 +1,8 @@
-package adapter2;
+package adapter.transfer;
 
-import adapter.Banner;
-import adapter.Print;
+import adapter.extend.Banner;
 
-public class PrintBanner extends adapter2.Print {
+public class PrintBanner extends adapter.transfer.Print {
     private Banner banner;
     public PrintBanner(String string) {
         this.banner = new Banner(string);

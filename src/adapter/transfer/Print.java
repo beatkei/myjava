@@ -1,4 +1,4 @@
-package adapter2;
+package adapter.transfer;
 
 public abstract class Print {
     public abstract void printWeak();

@@ -1,4 +1,4 @@
-package adapter2;
+package adapter.transfer;
 
 public class Banner {
     private String string;
