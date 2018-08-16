@@ -1,0 +1,42 @@
+@startuml
+
+package framwork {
+    class Factory {
+        create()
+        #createProduct()
+        #registerProduct()
+    }
+
+    note right
+        <size:10>createメソッドでprotectedな
+        <size:10>メソッドを利用してテンプレート処理
+        <size:10>（インスタンス作成）を実施
+    end note
+
+    class Product {
+        use()
+    }
+}
+
+package idcard {
+    class IDCardFactory {
+        owners
+        create()
+        #createProduct()
+        #registerProduct()
+        getOwners
+    }
+
+    class IDCard {
+        owner
+        use()
+        getOwner()
+    }
+}
+
+Factory <|-do- IDCardFactory
+Product <|-do- IDCard
+Factory -ri-> Product : Creates
+IDCardFactory -ri-> IDCard : Creates
+
+@enduml
