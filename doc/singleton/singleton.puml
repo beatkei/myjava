@@ -1,0 +1,13 @@
+@startuml
+
+class Singleton {
+    -singleton
+    -Singleton()
+    +getInstans()
+}
+
+note top of Singleton
+    <size:10>コンストラクタをprivateにして
+    <size:10>newできないようにしている
+end note
+@enduml
