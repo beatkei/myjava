@@ -46,4 +46,20 @@ BookShelfIterator o-le-> BookShelf
 BookShelf o--> Book
 Aggregate <|.do. BookShelf
 
+note left of Aggregate
+    <size:10>Aggregate
+end note
+
+note left of BookShelf
+    <size:10>ConcreteAggregate
+end note
+
+note right of Iterator
+    <size:10>Iterator
+end note
+
+note right of BookShelfIterator
+    <size:10>ConcreteIterator
+end note
+
 @enduml

@@ -22,4 +22,16 @@ class StringDisplay {
 AbstractDisplay <|-do- CharDisplay
 AbstractDisplay <|-do- StringDisplay
 
+note top of AbstractDisplay
+    <size:10>AbstractClass
+end note
+
+note left of CharDisplay
+    <size:10>ConcreteClass
+end note
+
+note right of StringDisplay
+    <size:10>ConcreteClass
+end note
+
 @enduml

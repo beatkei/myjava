@@ -27,4 +27,20 @@ Main -do-> Print:Users
 Print <|-ri- PrintBanner:extends
 PrintBanner o-ri-> Banner:has
 
+note left of Main
+    <size:10>Client
+end note
+
+note left of Print
+    <size:10>Target
+end note
+
+note top of PrintBanner
+    <size:10>Adapter
+end note
+
+note top of Banner
+    <size:10>Adaptee
+end note
+
 @enduml

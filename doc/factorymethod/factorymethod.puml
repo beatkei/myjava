@@ -34,9 +34,22 @@ Factory -ri-> Product : Creates
 IDCardFactory -ri-> IDCard : Creates
 
 note top of Factory
+    <size:10>creator
     <size:10>createメソッドでprotectedな
     <size:10>メソッドを利用してテンプレート処理
     <size:10>（インスタンス作成）を実施
+end note
+
+note left of Product
+    <size:10>Product
+end note
+
+note bottom of IDCardFactory
+    <size:10>ConcreteCreator
+end note
+
+note left of IDCard
+    <size:10>ConcreteProduct
 end note
 
 @enduml

@@ -1,0 +1,48 @@
+@startuml
+
+package framwork {
+    class Manager {
+        showcase
+        register()
+        create()
+    }
+
+    interface Product {
+        use()
+        createClone()
+    }
+}
+
+class UnderlinePen {
+        ulchar
+        use()
+        createClone()
+    }
+
+class MessageBox {
+        decochar
+        use()
+        createClone()
+    }
+
+Product <|.do. UnderlinePen
+Product <|.do. MessageBox
+Manager -ri-> Product : Uses
+
+note top of Manager
+    <size:10>Client
+end note
+
+note top of Product
+    <size:10>Prototype
+end note
+
+note left of UnderlinePen
+    <size:10>ConcreteProtptype
+end note
+
+note right of MessageBox
+    <size:10>ConcreteProtptype
+end note
+
+@enduml
